@@ -16,9 +16,5 @@ declare(strict_types=1);
 
 require_once __DIR__.'/vendor/autoload.php';
 
-(new BlockClassAutocomplete\Editor(
-    dir: __DIR__,
-    file: __FILE__,
-))->register();
-
+(new BlockClassAutocomplete\Editor(__FILE__))->register();
 (new BlockClassAutocomplete\RestApi())->register();
